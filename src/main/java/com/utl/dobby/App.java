@@ -80,12 +80,19 @@ public class App {
             }
         }
         
-        System.out.println("Goodbye!");
+        System.out.println("Goodbye Sir!");
         
     }
     
     public static void main(final String[] args) throws NoSuchMethodException, SecurityException,
             InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+        
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            @Override
+            public void run() {
+                System.out.println("\nGoodbye Sir!");
+            }
+        });
         
         new App().run();
         
