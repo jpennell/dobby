@@ -80,8 +80,6 @@ public class App {
             }
         }
         
-        System.out.println("Goodbye Sir!");
-        
     }
     
     public static void main(final String[] args) throws NoSuchMethodException, SecurityException,
