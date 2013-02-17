@@ -1,0 +1,7 @@
+package com.utl.dobby.data;
+
+import "main/java/com/utl/dobby/data/roles.proto";
+
+message BrainMessage {
+    repeated RolesMessage roles = 1;
+}

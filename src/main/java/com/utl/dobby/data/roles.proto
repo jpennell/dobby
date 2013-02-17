@@ -1,0 +1,6 @@
+package com.utl.dobby.data;
+
+message RolesMessage {
+    optional string person = 1;
+    repeated string roles = 2;
+}
