@@ -8,6 +8,9 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
+import jlibs.core.lang.Ansi;
+import jlibs.core.util.logging.AnsiFormatter;
+
 import org.reflections.Reflections;
 
 public class App {
@@ -53,7 +56,6 @@ public class App {
                 } else if ("help".equals(input)) {
                     
                     System.out.println("\nHere are the commands that Dobby understands:");
-                    
                     System.out.println("\texit - Leave Dobby all alone");
                     System.out.println("\thelp - Print out the commands that Dobby understands");
                     System.out.println("\tdobby brain - Print out Dobby's brain");
